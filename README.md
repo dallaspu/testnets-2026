@@ -57,7 +57,7 @@ That matters because the testnet is where you spend your time. You will deploy t
 - **Block time is not speed you feel.** Arbitrum produces blocks on demand, so the number you measure depends on how busy the window was. A 0.25s reading and a 2s reading can both be correct for the same chain.
 - **Chain ID is not decoration.** Starknet's testnet ID is 24 digits. Read it from a registry rather than retyping it — a hand-copied config gets this wrong silently and then fails somewhere unrelated.
 
-⭐ **For chain IDs and RPC endpoints, read [ethereum-lists/chains](https://github.com/ethereum-lists/chains)** (★9,830 · 2026-09-24) or **[Chainlist](https://chainlist.org/)**, rather than copying from a blog post. ⚠️ But note it lists dead networks as `active` — **the registry is not a liveness oracle.**
+⭐ **For chain IDs and RPC endpoints, read [ethereum-lists/chains](https://github.com/ethereum-lists/chains)** (★9,830 · 2026-09-26) or **[Chainlist](https://chainlist.org/)**, rather than copying from a blog post. ⚠️ But note it lists dead networks as `active` — **the registry is not a liveness oracle.**
 
 ---
 
@@ -126,7 +126,7 @@ Testnets are the first thing that breaks in an old tutorial. They are not the on
 | A 2022 guide says | In 2026 |
 |:--|:--|
 | Polygon **Mumbai** (`80001`) | Retired April 2024 → **Amoy** (`80002`). ⚠️ Its native gas token is **POL**, not MATIC — any snippet saying `MATIC` is at least two years stale |
-| Install **Truffle + Ganache** | Archived. The 2026 default is **[Foundry](https://github.com/foundry-rs/foundry)** (★10,625 · 2026-09-25) — `anvil` replaces Ganache |
+| Install **Truffle + Ganache** | Archived. The 2026 default is **[Foundry](https://github.com/foundry-rs/foundry)** (★10,626 · 2026-09-26) — `anvil` replaces Ganache |
 | "Foundry or Hardhat?" | Not either/or: **[Hardhat](https://github.com/NomicFoundation/hardhat)** (★8,508) is at **Hardhat 3** with a Foundry compatibility layer. It is Solidity tests vs TypeScript tests |
 | **OpenZeppelin 4.x** imports | 5.x broke them: `Ownable` gained a constructor argument, `increaseAllowance`/`decreaseAllowance` were removed, revert strings became custom errors. That failure lands in the same afternoon as the testnet one |
 | "The Merge is next" | Five upgrades ago — Merge (2022-09) → Shanghai (2023-04) → **Dencun (2024-03-13)** → Pectra (2025-05-07) → Fusaka (2025-12-03). **Dencun is the one that made L2 fees drop**, and it is why the gas prices above are as low as they are |
